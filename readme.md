@@ -1,3 +1,3 @@
-# Outrun 
+# Glaciers
 
-80's style logo/hero for a company that specializes in vaporware.
+Icy logo for glacier NGO.

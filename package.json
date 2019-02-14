@@ -1,0 +1,24 @@
+{
+  "name": "Glaciers",
+  "version": "1.0.0",
+  "description": "80's style logo/hero for a company that specializes in vaporware.",
+  "main": "glaciers.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TS000/Glaciers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TS000/Glaciers/issues"
+  },
+  "homepage": "https://github.com/TS000/Glaciers#readme",
+  "dependencies": {
+    "canvas-sketch": "^0.2.0",
+    "three": "^0.101.1"
+  }
+}
