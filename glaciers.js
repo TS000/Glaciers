@@ -22,11 +22,11 @@ const sketch = ({ context }) => {
   });
 
   // WebGL background color
-  renderer.setClearColor('#000', 1);
+  renderer.setClearColor('#fff', 1);
 
   // Setup a camera
   const camera = new THREE.PerspectiveCamera(45, 1, 0.01, 100);
-  camera.position.set(10, 2, -4);
+  camera.position.set(20, 2, -4);
   camera.lookAt(new THREE.Vector3());
 
   // Setup camera controller
@@ -34,7 +34,7 @@ const sketch = ({ context }) => {
 
   // Setup your scene
   const scene = new THREE.Scene();
-  scene.fog = new THREE.FogExp2( 0xCCCFFF, 0.007 );
+  scene.fog = new THREE.FogExp2( 0xFFFFFF, .09, .05 );
     const geometry = new THREE.CylinderGeometry( 0, 5.5, 5.5, 4, false )
     const material = new THREE.MeshStandardMaterial({
       color: 0xffffff,
@@ -55,11 +55,11 @@ const sketch = ({ context }) => {
   scene.add(line);
 
   // Specify an ambient/unlit colour
-  scene.add(new THREE.AmbientLight('#ffffff'));
+  scene.add(new THREE.AmbientLight('lightblue'));
 
   // Add some light
   const light = new THREE.PointLight('lightblue', 1, 15.5);
-  light.position.set(2, 2, -4).multiplyScalar(1.5);
+  light.position.set(2, 2, -8).multiplyScalar(1.5);
   scene.add(light);
 
   // draw each frame
