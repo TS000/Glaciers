@@ -22,7 +22,7 @@ const sketch = ({ context }) => {
   });
 
   // WebGL background color
-  renderer.setClearColor('#fff', 1);
+  renderer.setClearColor('#000', 1);
 
   // Setup a camera
   const camera = new THREE.PerspectiveCamera(45, 1, 0.01, 100);
@@ -34,11 +34,11 @@ const sketch = ({ context }) => {
 
   // Setup your scene
   const scene = new THREE.Scene();
-  scene.fog = new THREE.FogExp2( 0xFFFFFF, .09, .05 );
+  scene.fog = new THREE.FogExp2( 0x000000, .09, .05 );
     const geometry = new THREE.CylinderGeometry( 0, 5.5, 5.5, 4, false )
-    const material = new THREE.MeshStandardMaterial({
-      color: 0xffffff,
-      vertexColors: 0xffffff
+    const material = new THREE.MeshBasicMaterial({
+      color: 0x000000,
+      vertexColors: 0xffffff,
     })
     const cube = new THREE.Mesh(geometry, material)
     scene.add(cube)
